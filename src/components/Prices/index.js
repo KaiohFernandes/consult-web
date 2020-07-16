@@ -3,7 +3,7 @@ import { Container, Items, Item } from "./styles";
 
 function Prices() {
   return (
-    <Container>
+    <Container id="prices">
       <Title>PREÇO DISCADORES</Title>
 
       <Items>

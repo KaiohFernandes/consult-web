@@ -4,6 +4,10 @@ export const Container = styled.div`
   width: 100%;
   display: block;
 
+  .slick-arrow {
+    display: none !important;
+  }
+
   .slick-dots {
     bottom: 16px;
 

@@ -33,7 +33,7 @@ function Contact() {
   }
 
   return (
-    <Container>
+    <Container id="contact">
       <Title>FALE CONOSCO</Title>
       <p>Entre em contato conosco e receba um retorno em menos de 2 horas.</p>
 

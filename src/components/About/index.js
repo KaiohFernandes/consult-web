@@ -6,7 +6,7 @@ import megafone from '../../assets/images/megafone.svg';
 
 function About() {
   return (
-    <Container>
+    <Container id="about">
       <h1>CONHEÇA A <span>CONSULT</span></h1>
 
       <p>CONSULT - CRÉDITO INTELIGENTE é uma empresa que oferece<br />

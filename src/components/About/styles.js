@@ -58,8 +58,8 @@ export const Container = styled.div`
 
       .icon {
         background: #222;
-        width: 90px;
-        height: 90px;
+        min-width: 90px;
+        min-height: 90px;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -85,6 +85,38 @@ export const Container = styled.div`
         color: #222;
         font-family: 'Roboto';
         font-weight: 300;
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+
+    h1 {
+      font-size: 32px;
+    }
+
+    & > p {
+      font-size: 18px;
+
+      &.bold {
+        margin-top: 16px;
+      }
+    }
+
+    div.services {
+      width: 100%;
+      padding: 0 16px;
+    }
+
+    ul {
+      width: 50%;
+
+      li {
+        overflow: hidden;
+
+        p {
+          font-size: 18px;
+        }
       }
     }
   }

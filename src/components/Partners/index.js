@@ -14,7 +14,7 @@ function Partners() {
   };
 
   return (
-    <Container>
+    <Container id="partners">
       <Title>PARCEIROS</Title>
 
       <Slider {...settings}>

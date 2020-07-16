@@ -7,6 +7,10 @@ export const Container = styled.div`
   flex-direction: column;
   text-align: center;
   margin: 80px 0;
+
+  @media (max-width: 1000px) {
+    margin-top: 40px;
+  }
 `;
 
 export const Items = styled.div`
@@ -14,6 +18,12 @@ export const Items = styled.div`
   width: 1000px;
   align-self: center;
   margin-top: 40px;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+    padding: 0 16px;
+    display: block;
+  }
 `;
 
 export const Item = styled.div`
@@ -80,4 +90,12 @@ export const Item = styled.div`
     }
   }
 
+  @media (max-width: 1000px) {
+    width: 100%;
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 `;

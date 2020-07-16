@@ -11,6 +11,10 @@ export const Container = styled.div`
   background-size: cover;
   padding: 80px 0;
 
+  @media (max-width: 1000px) {
+    padding-top: 32px;
+  }
+
   .link {
     margin-top: 108px;
     font-size: 18px;
@@ -37,6 +41,13 @@ export const Content = styled.div`
   width: 820px;
   text-align: left;
   align-self: center;
+
+  @media (max-width: 1000px) {
+    display: block;
+    width: 100%;
+    padding: 0 16px;
+    text-align: center;
+  }
 `;
 
 export const Left = styled.div`
@@ -69,6 +80,26 @@ export const Left = styled.div`
     color: #FFFFFF;
     margin-top: 32px;
   }
+
+  @media (max-width: 1000px) {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 16px;
+
+    h2 {
+      font-size: 22px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+
+    p {
+      line-height: 20px;
+      margin-top: 16px;
+    }
+  }
 `;
 
 export const Right = styled.div`
@@ -91,5 +122,11 @@ export const Right = styled.div`
         margin-bottom: 0;
       }
     }
+  }
+
+  @media (max-width: 1000px) {
+    justify-content: center;
+    padding: 0;
+    text-align: left;
   }
 `;

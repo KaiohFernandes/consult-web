@@ -7,6 +7,10 @@ export const Container = styled.div`
   text-align: center;
   margin-top: 80px;
 
+  .slick-arrow {
+    display: none !important;
+  }
+
   .slick-dots {
     bottom: 16px;
 
@@ -49,6 +53,10 @@ export const Container = styled.div`
     top: 50px;
     background: rgba(96, 163, 61, 0.6);
   }
+
+  @media (max-width: 1000px) {
+    margin-top: 16px;
+  }
 `;
 
 export const Item = styled.div`
@@ -86,5 +94,16 @@ export const ItemDescription = styled.div`
     line-height: 32px;
     text-decoration: none;
     color: #222;
+  }
+
+  @media (max-width: 1000px) {
+    a {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 `;

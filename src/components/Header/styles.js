@@ -24,6 +24,11 @@ export const Content = styled.div`
   img {
     height: 72px;
   }
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    padding: 0 16px;
+  }
 `;
 
 export const Nav = styled.nav`

@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link, animateScroll as scroll } from "react-scroll"
+
 import { Container, Content, Nav } from './styles';
 
 import logo from '../../assets/images/logo-white.png';
@@ -15,16 +17,48 @@ function Header() {
         <Nav>
           <ul>
             <li>
-              <a href="#">QUEM SOMOS</a>
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-90}
+                duration={500}
+              >
+                QUEM SOMOS
+              </Link>
             </li>
             <li>
-              <a href="#">PARCEIROS</a>
+              <Link
+                to="partners"
+                spy={true}
+                smooth={true}
+                offset={-90}
+                duration={500}
+              >
+                PARCEIROS
+              </Link>
             </li>
             <li>
-              <a href="#">PREÇOS E PLANOS</a>
+              <Link
+                to="prices"
+                spy={true}
+                smooth={true}
+                offset={-90}
+                duration={500}
+              >
+                PREÇOS E PLANOS
+              </Link>
             </li>
             <li>
-              <a href="#">CONTATO</a>
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-90}
+                duration={500}
+              >
+                CONTATO
+              </Link>
             </li>
           </ul>
 
