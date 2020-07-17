@@ -80,4 +80,11 @@ export const Container = styled.div`
       }
     }
   }
+
+  @media (max-width: 500px) {
+    form {
+      width: 100%;
+      padding: 0 16px;
+    }
+  }
 `;

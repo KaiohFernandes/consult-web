@@ -13,4 +13,5 @@ export const Container = styled.footer`
   font-family: 'Roboto';
   font-weight: 300;
   font-size: 16px;
+  text-align: center;
 `;

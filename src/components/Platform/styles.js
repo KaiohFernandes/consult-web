@@ -34,6 +34,13 @@ export const Container = styled.div`
       color: #fff;
     }
   }
+
+  @media (max-width: 500px) {
+    .link {
+      font-size: 14px;
+      padding: 16px;
+    }
+  }
 `;
 
 export const Content = styled.div`

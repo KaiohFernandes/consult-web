@@ -68,6 +68,10 @@ export const Item = styled.div`
 
 export const ItemImage = styled.div`
   width: 45%;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
 `;
 
 export const ItemDescription = styled.div`
@@ -106,4 +110,27 @@ export const ItemDescription = styled.div`
       line-height: 24px;
     }
   }
+
+  @media (max-width: 767px) {
+    a {
+      font-size: 18px;
+    }
+
+    p {
+      max-width: 200px;
+      margin-top: 8px;
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+    padding: 32px 16px 54px 16px;
+
+    p {
+      max-width: 100%;
+    }
+  }
+
 `;

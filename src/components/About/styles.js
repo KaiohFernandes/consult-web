@@ -59,7 +59,9 @@ export const Container = styled.div`
       .icon {
         background: #222;
         min-width: 90px;
+        max-width: 90px;
         min-height: 90px;
+        max-height: 90px;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -115,6 +117,31 @@ export const Container = styled.div`
         overflow: hidden;
 
         p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+
+    div.services {
+      display: block;
+    }
+
+    ul {
+      width: 100%;
+
+      li {
+        overflow: hidden;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 16px;
+
+        p {
+          margin-top: 8px;
+          width: 100%;
+          text-align: center;
           font-size: 18px;
         }
       }
