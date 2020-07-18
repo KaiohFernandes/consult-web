@@ -9,24 +9,25 @@ function Prices() {
       <Items>
         <Item>
           <div>
-            <h2>DISCADOR PREDITIVO</h2>
-            <h3>crédito voip</h3>
+            <h2>DISCADOR PREDITIVO (CALLCENTER)</h2>
+            <h3>tecnologia voip</h3>
 
             <ul>
               <li>Para dispositivos celulares <span>R$ 0,09</span></li>
               <li>Para aparelhos fixo R$ <span>0,03</span></li>
             </ul>
 
-            <p className="item-price">R$ 99,00 (PA)</p>
+            <p className="item-price">R$ 99,00 licença (PA)</p>
           </div>
         </Item>
 
         <Item active>
           <div>
             <h2>URA REVERSA</h2>
-            <h3>crédito voip</h3>
+            <h3>tecnologia voip</h3>
 
             <ul>
+              <li>3 robôs</li>
               <li>3 canais de ligação</li>
               <li>2 sistemas para vendas </li>
               <li>1 sistema para gestão</li>
@@ -43,7 +44,7 @@ function Prices() {
         <Item>
           <div>
             <h2>DISCADOR CLICK TOCALL</h2>
-            <h3>crédito voip</h3>
+            <h3>tecnologia voip</h3>
 
             <ul>
               <li>Para dispositivos celulares <span>Ilimitado</span></li>

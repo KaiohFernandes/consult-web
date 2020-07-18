@@ -16,10 +16,11 @@ function SlickSlider() {
     <Container>
       <Slider {...settings}>
         <div>
-          <img src={slide} />
-        </div>
-        <div>
-          <img src={slide} />
+          <img
+            src={slide}
+            alt="Consult - Crédito Inteligente"
+            title="Consult - Crédito Inteligente"
+          />
         </div>
       </Slider>
     </Container>

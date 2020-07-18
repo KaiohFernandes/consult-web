@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Consult</title>
+        <title>Consult - Crédito Inteligente</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

@@ -28,29 +28,6 @@ function Partners() {
               <a href="https://asnobrasil.com.br" target="blank">
                 www.asnobrasil.com.br
               </a>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy text
-                ever since the 1500s,
-              </p>
-            </ItemDescription>
-          </Item>
-        </div>
-        <div>
-          <Item>
-            <ItemImage>
-              <img src={slide} />
-            </ItemImage>
-            <ItemDescription>
-              <Title>ASNO BRASIL</Title>
-              <a href="https://asnobrasil.com.br" target="blank">
-                www.asnobrasil.com.br
-              </a>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy text
-                ever since the 1500s,
-              </p>
             </ItemDescription>
           </Item>
         </div>

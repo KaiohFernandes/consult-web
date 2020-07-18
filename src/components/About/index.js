@@ -9,8 +9,9 @@ function About() {
     <Container id="about">
       <h1>CONHEÇA A <span>CONSULT</span></h1>
 
-      <p>CONSULT - CRÉDITO INTELIGENTE é uma empresa que oferece<br />
-      plataformas para o mundo do crédito consignado.</p>
+      <p>CONSULT é uma plataforma de integração sistemas, voips, discadora e
+      bases de dados necessários para sua alta performance no mercado de
+      consignado.</p>
 
       <p className="bold">Disponibilizamos aos nossos clientes e parceiros uma<br />
       plataforma contendo</p>
@@ -60,7 +61,7 @@ function About() {
             <div className="icon">
               <img src={megafone} alt="Excelentes Campanhas" title="Excelentes Campanhas" />
             </div>
-            <p>Excelentes campanhas</p>
+            <p>Leads Cortesia</p>
           </li>
           <li>
             <div className="icon">
@@ -73,6 +74,12 @@ function About() {
               <i className="material-icons">people_online</i>
             </div>
             <p>Informações gerais sobre clientes e seus benefícios</p>
+          </li>
+          <li>
+            <div className="icon">
+              <i className="material-icons">call</i>
+            </div>
+            <p>URA reversa</p>
           </li>
         </ul>
       </div>
