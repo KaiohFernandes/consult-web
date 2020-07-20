@@ -15,6 +15,28 @@ export const Container = styled.div`
     margin-top: 16px;
   }
 
+  .alert {
+    width: 100%;
+    text-align: left;
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+
+    &.error {
+      color: #721c24;
+      background-color: #f8d7da;
+      border-color: #f5c6cb;
+    }
+
+    &.success {
+      color: #155724;
+      background-color: #d4edda;
+      border-color: #c3e6cb;
+    }
+  }
+
   form {
     display: flex;
     flex-direction: column;

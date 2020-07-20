@@ -6,6 +6,7 @@ import { useState } from 'react';
 
 function Contact() {
 
+  const [message, setMessage] = useState({});
   const [formData, setFormData] = useState({});
 
   function phoneMask(oldValue) {
@@ -28,8 +29,28 @@ function Contact() {
     });
   }
 
-  function handleSubmit(e) {
-    e.preventDefault();
+  function handleSubmit(body) {
+    const headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+
+    fetch(`http://localhost:3000/api/contact`, {
+      method: 'POST',
+      headers,
+      body: JSON.stringify(body)
+    })
+    .then(res => res.json())
+    .then(res => {
+      setMessage({
+        text: res.message,
+        success: true
+      })
+    })
+    .catch(err => {
+      setMessage({
+        text: err.message,
+        success: false
+      })
+    });
   }
 
   return (
@@ -41,6 +62,12 @@ function Contact() {
         onSubmit={handleSubmit}
         onChange={handleChange}
       >
+        {message.text &&
+          <div className={`alert ${message.success ? 'success' : 'error'}`}>
+            { message.text }
+          </div>
+        }
+
         <label>
           <span>Nome</span>
           <Input
