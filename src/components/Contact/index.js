@@ -33,7 +33,7 @@ function Contact() {
     const headers = new Headers();
     headers.append('Content-Type', 'application/json');
 
-    fetch(`http://localhost:3000/api/contact`, {
+    fetch(`https://consultx.net.br/api/contact`, {
       method: 'POST',
       headers,
       body: JSON.stringify(body)
