@@ -100,6 +100,11 @@ export const Container = styled.div`
         background: #fff;
         color: #60A33D;
       }
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
     }
   }
 

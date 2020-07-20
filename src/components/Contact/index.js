@@ -5,7 +5,7 @@ import Title from "../Title";
 import { useState } from 'react';
 
 function Contact() {
-
+  const [disabled, setDisabled] = useState(false);
   const [message, setMessage] = useState({});
   const [formData, setFormData] = useState({});
 
@@ -30,6 +30,8 @@ function Contact() {
   }
 
   function handleSubmit(body) {
+    setDisabled(true);
+
     const headers = new Headers();
     headers.append('Content-Type', 'application/json');
 
@@ -50,7 +52,8 @@ function Contact() {
         text: err.message,
         success: false
       })
-    });
+    })
+    .finally(() => setDisabled(false));
   }
 
   return (
@@ -114,8 +117,8 @@ function Contact() {
           />
         </label>
 
-        <button type="submit" className="form-button">
-          ENVIAR
+        <button type="submit" className="form-button" disabled={disabled}>
+          { disabled ? 'ENVIANDO...' : 'ENVIAR' }
         </button>
       </Form>
     </Container>
