@@ -30,7 +30,7 @@ function Platform() {
         </Right>
       </Content>
 
-      <a href="#" className="link">
+      <a href="#contact" className="link">
         CONTRATE AGORA POR R$ 125,00 / MÊS
       </a>
     </Container>
