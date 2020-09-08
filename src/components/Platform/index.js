@@ -31,7 +31,7 @@ function Platform() {
       </Content>
 
       <a href="#contact" className="link">
-        CONTRATE AGORA POR R$ 125,00 / MÊS
+        CONTRATE AGORA POR R$ 140,00 / MÊS
       </a>
     </Container>
   )
