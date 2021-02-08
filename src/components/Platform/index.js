@@ -1,5 +1,5 @@
-import { Container, Content, Left, Right } from './styles'
-import Title from '../Title'
+import { Container, Content, Left, Right } from "./styles";
+import Title from "../Title";
 
 function Platform() {
   return (
@@ -11,10 +11,12 @@ function Platform() {
           <h2>PROFISSIONALIZE SEU NEGÓCIO</h2>
           <h3>Personalizamos toda a estrutura de sua loja</h3>
 
-          <p>Relatório de comissões a esteiras de digitação, proporcionando a
-            sua equipe uma visão completa de todo o andamento do contrato. E a
-            você um controle preciso de rendimentos do seu negócio, com
-            estratégia e precisão.</p>
+          <p>
+            Relatório de comissões a esteiras de digitação, proporcionando a sua
+            equipe uma visão completa de todo o andamento do contrato. E a você
+            um controle preciso de rendimentos do seu negócio, com estratégia e
+            precisão.
+          </p>
         </Left>
         <Right>
           <ul>
@@ -31,10 +33,10 @@ function Platform() {
       </Content>
 
       <a href="#contact" className="link">
-        CONTRATE AGORA POR R$ 140,00 / MÊS
+        CONTRATE AGORA POR R$ 160,00 / MÊS
       </a>
     </Container>
-  )
+  );
 }
 
 export default Platform;
